@@ -1,0 +1,20 @@
+{
+  "name": "nodelab",
+  "version": "1.0.0",
+  "description": "have fun with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier-eslint \"*.js\"",
+    "start": "node index"
+  },
+  "author": "pbb",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-tools": "^4.0.4"
+  },
+  "devDependencies": {
+    "prettier-eslint": "^9.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  }
+}
