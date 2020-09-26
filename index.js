@@ -1,18 +1,15 @@
-const letter = "abcdefg";
-const letters = letter.split("");
+const isPangram = (string) => {
+  const regex = /[a-z]/g;
+  return string.toLowerCase().match(regex).reduce((accumulateur, valeurCourante) => {
+    if (!accumulateur.includes(valeurCourante)) {
+      accumulateur.push(valeurCourante);
+    }
+    return accumulateur;
+  }, []).sort().length === 26;
+};
 
-const lettersByTwo = letters.flatMap((letter, index, array) => {
-  if (index % 2 != 0) {
-    return [];
-  }
-  let determineConcat = array[index + 1] ? array[index + 1] : "_";
-  return letter + determineConcat;
-});
+const paragraph = "The quick brown fox jumps over the lazy dog.";
+const res = isPangram(paragraph);
 
-console.log("letterByTwoL", lettersByTwo);
+console.log('res', {res});
 
-function solution(s) {
-  return (s + "_").match(/.{2}/g) || [];
-}
-
-console.log("", solution(letter));
