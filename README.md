@@ -1,2 +1,2 @@
 # nodeLab
-Play with node
+Have fun with node
