@@ -1,2 +1,2 @@
 # nodeLab
-Have fun with Node !!!
+Have fun with Node.jsgit config --list !!!
